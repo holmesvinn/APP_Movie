@@ -1,0 +1,3 @@
+# APP_Movie
+
+Android Application to fetch Json data from a url and display it...

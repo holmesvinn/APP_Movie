@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+
+
+
+
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:fitsSystemWindows="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+
+
+
+
+
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:fitsSystemWindows="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/colorAccent">
+
+
+
+
+
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="fill">
+                <ImageView
+                    android:layout_width="500dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/single_image"
+                    android:layout_gravity="center"
+
+                    />
+
+
+
+</FrameLayout>
+
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                app:layout_collapseMode="pin"
+
+
+
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+
+
+
+
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/single_progress"
+            android:layout_gravity="center"
+            />
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+
+
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_scrolling"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingBottom="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/mybuttons2"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+
+                    android:background="@drawable/mybuttons3">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:paddingLeft="7dp"
+
+
+                        android:textColor="@color/textcolor"
+                        android:paddingTop="20dp"
+                        android:id="@+id/single_Release" />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:paddingLeft="7dp"
+                        android:textColor="@color/textcolor"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:id="@+id/single_language" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingBottom="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/mybuttons2"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/mybuttons3">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:paddingLeft="7dp"
+                        android:textColor="@color/textcolor"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:id="@+id/single_Overview" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/mybuttons2"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/mybuttons3">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:paddingLeft="7dp"
+                        android:paddingTop="20dp"
+                        android:textColor="@color/textcolor"
+                        android:paddingBottom="20dp"
+                        android:id="@+id/single_Vote_Counts" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingBottom="20dp"
+
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@drawable/mybuttons2"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="20dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/mybuttons3"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/textcolor"
+                            android:paddingLeft="7dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Rating:"
+
+                            />
+
+
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:paddingLeft="3dp"
+                            android:layout_gravity="center"
+                            android:isIndicator="true"
+
+
+
+                            android:id="@+id/ratingBar" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+
